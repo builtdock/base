@@ -1,10 +1,10 @@
 all: build
 
 build:
-	docker build -t deis/base .
+	docker build -t builtdock/base .
 
 shell:
-	docker run -it --rm deis/base /bin/bash
+	docker run -it --rm builtdock/base /bin/bash
 
 clean:
-	docker rmi deis/base
+	docker rmi builtdock/base
